@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-          <p>Footer --Copyrights </p>
+          <p>@React 2018 </p>
         </div>
     );
   }

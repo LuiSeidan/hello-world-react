@@ -1,15 +1,19 @@
+//Dependencies
 import React, { Component } from 'react';
 import './css/Content.css';
+import PropTypes from 'prop-types';
 
 class Content extends Component {
-  render() {
-    return (
-      <div className="Content">
-          <h1>Soy el contenido</h1>
-
-          <p>Lorem ipsum.... </p>
-        </div>
-    );
+  static propTypes = {
+    body:PropTypes.object.isRequired
+  }
+  render(){
+    const {body} = this.props;
+    return(
+      <div>
+        {body}
+      </div>
+    )
   }
 }
 
